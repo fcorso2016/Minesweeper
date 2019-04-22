@@ -1,4 +1,4 @@
-namespace MinesweeperProject.Architecture.Composite {
+namespace MinesweeperProject.Structure {
     public abstract class NormalSquare : Square {
         
         protected NormalSquare(int x, int y) : base(x, y) {

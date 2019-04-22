@@ -44,21 +44,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Architecture\Composite\ComplexPattern.cs" />
-    <Compile Include="Architecture\Composite\EmptySquare.cs" />
-    <Compile Include="Architecture\Composite\IBasicComponent.cs" />
-    <Compile Include="Architecture\Composite\IBoardComponent.cs" />
-    <Compile Include="Architecture\Composite\Mine.cs" />
-    <Compile Include="Architecture\Composite\NormalSquare.cs" />
-    <Compile Include="Architecture\Composite\NumberSquare.cs" />
-    <Compile Include="Architecture\Composite\Pattern.cs" />
-    <Compile Include="Architecture\Composite\Square.cs" />
     <Compile Include="Architecture\DynamicLinkage\Board.cs" />
     <Compile Include="Architecture\DynamicLinkage\Difficulty.cs" />
     <Compile Include="Architecture\DynamicLinkage\GameMode.cs" />
     <Compile Include="Architecture\DynamicLinkage\IBoard.cs" />
-    <Compile Include="Architecture\Factory\BoardFactory.cs" />
-    <Compile Include="Architecture\Factory\IBoardFactory.cs" />
+    <Compile Include="Architecture\Factory\CppGenerator.cs" />
+    <Compile Include="Architecture\Factory\GeneratorFactory.cs" />
+    <Compile Include="Architecture\Factory\IGenerator.cs" />
+    <Compile Include="Architecture\Factory\IGeneratorFactory.cs" />
+    <Compile Include="Architecture\Factory\NativeGenerator.cs" />
+    <Compile Include="Architecture\Factory\NullGenerator.cs" />
+    <Compile Include="Architecture\Factory\WebGenerator.cs" />
+    <Compile Include="Architecture\Filter\Criteria.cs" />
+    <Compile Include="Architecture\Filter\ICriteria.cs" />
+    <Compile Include="Architecture\Filter\MinesChecker.cs" />
+    <Compile Include="Architecture\Filter\NumberChecker.cs" />
+    <Compile Include="Architecture\Filter\SizeChecker.cs" />
     <Compile Include="Architecture\Observer\GameInstance.cs" />
     <Compile Include="Architecture\Observer\ObservationState.cs" />
     <Compile Include="Architecture\Observer\Payload.cs" />
@@ -71,6 +72,11 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Structure\EmptySquare.cs" />
+    <Compile Include="Structure\Mine.cs" />
+    <Compile Include="Structure\NormalSquare.cs" />
+    <Compile Include="Structure\NumberSquare.cs" />
+    <Compile Include="Structure\Square.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>

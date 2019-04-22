@@ -2,11 +2,11 @@ using System;
 using System.Collections.Generic;
 using MinesweeperProject.Architecture.Observer;
 
-namespace MinesweeperProject.Architecture.Composite {
-    public abstract class Square : IBasicComponent {
+namespace MinesweeperProject.Structure {
+    public abstract class Square : IObservable<Payload> {
 
-        protected int X;
-        protected int Y;
+        public int X { get; }
+        public int Y { get; }
         protected bool IsOpen;
         protected bool IsFlagged;
         public IList<IObserver<Payload>> Observers { get; set; }

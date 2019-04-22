@@ -1,24 +1,24 @@
 using System;
 using System.Collections.Generic;
-using MinesweeperProject.Architecture.Composite;
+using MinesweeperProject.Structure;
 
 namespace MinesweeperProject.Architecture.DynamicLinkage {
     public class Board : IBoard {
 
-        private IList<IBoardComponent> _components;
+        private Square[,] _squares;
         private Scheduler.Scheduler _scheduler;
         private GameMode _gameMode;
 
         public Board(GameMode gm) {
-            throw new NotSupportedException();
+            throw new NotImplementedException();
         }
 
         public void TriggerExplosions(Mine mine) {
-            throw new NotSupportedException();
+            throw new NotImplementedException();
         }
 
-        public void AddComponent(IBoardComponent comp) {
-            throw new NotSupportedException();
+        public void AddSquare(Square sq) {
+            _squares[sq.X, sq.Y] = sq;
         }
     }
 }

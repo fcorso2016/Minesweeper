@@ -6,17 +6,6 @@
     <e p="C:\Users\Francesco Corso\OneDrive\Documents\School\Software Architecture\Minesweeper\MinesweeperProject" t="IncludeFlat">
       <e p="MinesweeperProject" t="IncludeRecursive">
         <e p="Architecture" t="Include">
-          <e p="Composite" t="Include">
-            <e p="ComplexPattern.cs" t="Include" />
-            <e p="EmptySquare.cs" t="Include" />
-            <e p="IBasicComponent.cs" t="Include" />
-            <e p="IBoardComponent.cs" t="Include" />
-            <e p="Mine.cs" t="Include" />
-            <e p="NormalSquare.cs" t="Include" />
-            <e p="NumberSquare.cs" t="Include" />
-            <e p="Pattern.cs" t="Include" />
-            <e p="Square.cs" t="Include" />
-          </e>
           <e p="DynamicLinkage" t="Include">
             <e p="Board.cs" t="Include" />
             <e p="Difficulty.cs" t="Include" />
@@ -24,8 +13,20 @@
             <e p="IBoard.cs" t="Include" />
           </e>
           <e p="Factory" t="Include">
-            <e p="BoardFactory.cs" t="Include" />
-            <e p="IBoardFactory.cs" t="Include" />
+            <e p="CppGenerator.cs" t="Include" />
+            <e p="GeneratorFactory.cs" t="Include" />
+            <e p="IGenerator.cs" t="Include" />
+            <e p="IGeneratorFactory.cs" t="Include" />
+            <e p="NativeGenerator.cs" t="Include" />
+            <e p="NullGenerator.cs" t="Include" />
+            <e p="WebGenerator.cs" t="Include" />
+          </e>
+          <e p="Filter" t="Include">
+            <e p="Criteria.cs" t="Include" />
+            <e p="ICriteria.cs" t="Include" />
+            <e p="MinesChecker.cs" t="Include" />
+            <e p="NumberChecker.cs" t="Include" />
+            <e p="SizeChecker.cs" t="Include" />
           </e>
           <e p="Observer" t="Include">
             <e p="GameInstance.cs" t="Include" />
@@ -49,6 +50,13 @@
           <e p="Resources.resx" t="Include" />
           <e p="Settings.Designer.cs" t="Include" />
           <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="Structure" t="Include">
+          <e p="EmptySquare.cs" t="Include" />
+          <e p="Mine.cs" t="Include" />
+          <e p="NormalSquare.cs" t="Include" />
+          <e p="NumberSquare.cs" t="Include" />
+          <e p="Square.cs" t="Include" />
         </e>
       </e>
       <e p="MinesweeperProject.sln" t="IncludeFlat" />
