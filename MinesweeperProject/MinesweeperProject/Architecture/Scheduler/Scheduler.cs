@@ -9,11 +9,11 @@ namespace MinesweeperProject.Architecture.Scheduler {
         private IList<Thread> _waitingThreads;
 
         public void Start() {
-            throw new NotSupportedException();
+            throw new NotImplementedException();
         }
 
         public void Done() {
-            throw new NotSupportedException();
+            throw new NotImplementedException();
         }
 
     }

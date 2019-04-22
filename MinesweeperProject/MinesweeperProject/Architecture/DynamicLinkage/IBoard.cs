@@ -1,7 +1,8 @@
-using MinesweeperProject.Architecture.Composite;
+using System.Xml.Linq;
+using MinesweeperProject.Structure;
 
 namespace MinesweeperProject.Architecture.DynamicLinkage {
     public interface IBoard {
-        void AddComponent(IBoardComponent comp);
+        void AddSquare(Square sq);
     }
 }

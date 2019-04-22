@@ -1,17 +1,17 @@
 using System;
 using System.Windows.Forms;
-using MinesweeperProject.Architecture.Composite;
 using MinesweeperProject.Architecture.DynamicLinkage;
 using MinesweeperProject.Architecture.Factory;
+using MinesweeperProject.Structure;
 
 namespace MinesweeperProject.Architecture.Observer {
     public class GameInstance : GameMode, IObserver<Payload> {
         
         public string Message { get; set; }
 
-        private IBoardFactory _factory;
+        private IGeneratorFactory _factory;
 
-        public GameInstance(IBoardFactory factory) {
+        public GameInstance(IGeneratorFactory factory) {
             _factory = factory;
         }
         

@@ -1,4 +1,4 @@
-namespace MinesweeperProject.Architecture.Composite {
+namespace MinesweeperProject.Structure {
     public class NumberSquare : NormalSquare {
 
         private int _value;
