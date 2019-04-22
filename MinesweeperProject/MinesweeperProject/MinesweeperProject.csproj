@@ -44,6 +44,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Architecture\Composite\ComplexPattern.cs" />
+    <Compile Include="Architecture\Composite\EmptySquare.cs" />
+    <Compile Include="Architecture\Composite\IBasicComponent.cs" />
+    <Compile Include="Architecture\Composite\IBoardComponent.cs" />
+    <Compile Include="Architecture\Composite\Mine.cs" />
+    <Compile Include="Architecture\Composite\NormalSquare.cs" />
+    <Compile Include="Architecture\Composite\NumberSquare.cs" />
+    <Compile Include="Architecture\Composite\Pattern.cs" />
+    <Compile Include="Architecture\Composite\Square.cs" />
+    <Compile Include="Architecture\DynamicLinkage\Board.cs" />
+    <Compile Include="Architecture\DynamicLinkage\Difficulty.cs" />
+    <Compile Include="Architecture\DynamicLinkage\GameMode.cs" />
+    <Compile Include="Architecture\DynamicLinkage\IBoard.cs" />
+    <Compile Include="Architecture\Factory\BoardFactory.cs" />
+    <Compile Include="Architecture\Factory\IBoardFactory.cs" />
+    <Compile Include="Architecture\Observer\GameInstance.cs" />
+    <Compile Include="Architecture\Observer\ObservationState.cs" />
+    <Compile Include="Architecture\Observer\Payload.cs" />
+    <Compile Include="Architecture\Scheduler\Scheduler.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

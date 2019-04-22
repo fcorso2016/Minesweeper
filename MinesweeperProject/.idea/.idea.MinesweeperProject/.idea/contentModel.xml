@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\Francesco Corso\.Rider2018.3\system\extResources" t="IncludeRecursive" />
+    <e p="C:\Users\Francesco Corso\.Rider2018.3\system\resharper-host\local\Transient\ReSharperHost\v183\SolutionCaches\_MinesweeperProject.1355147701.00" t="ExcludeRecursive" />
+    <e p="C:\Users\Francesco Corso\OneDrive\Documents\School\Software Architecture\Minesweeper\MinesweeperProject" t="IncludeFlat">
+      <e p="MinesweeperProject" t="IncludeRecursive">
+        <e p="Architecture" t="Include">
+          <e p="Composite" t="Include">
+            <e p="ComplexPattern.cs" t="Include" />
+            <e p="EmptySquare.cs" t="Include" />
+            <e p="IBasicComponent.cs" t="Include" />
+            <e p="IBoardComponent.cs" t="Include" />
+            <e p="Mine.cs" t="Include" />
+            <e p="NormalSquare.cs" t="Include" />
+            <e p="NumberSquare.cs" t="Include" />
+            <e p="Pattern.cs" t="Include" />
+            <e p="Square.cs" t="Include" />
+          </e>
+          <e p="DynamicLinkage" t="Include">
+            <e p="Board.cs" t="Include" />
+            <e p="Difficulty.cs" t="Include" />
+            <e p="GameMode.cs" t="Include" />
+            <e p="IBoard.cs" t="Include" />
+          </e>
+          <e p="Factory" t="Include">
+            <e p="BoardFactory.cs" t="Include" />
+            <e p="IBoardFactory.cs" t="Include" />
+          </e>
+          <e p="Observer" t="Include">
+            <e p="GameInstance.cs" t="Include" />
+            <e p="ObservationState.cs" t="Include" />
+            <e p="Payload.cs" t="Include" />
+          </e>
+          <e p="Scheduler" t="Include">
+            <e p="Scheduler.cs" t="Include" />
+          </e>
+        </e>
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="Form1.cs" t="Include" />
+        <e p="Form1.Designer.cs" t="Include" />
+        <e p="Form1.resx" t="Include" />
+        <e p="MinesweeperProject.csproj" t="IncludeRecursive" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+      </e>
+      <e p="MinesweeperProject.sln" t="IncludeFlat" />
+      <e p="packages" t="ExcludeRecursive" />
+    </e>
+  </component>
+</project>

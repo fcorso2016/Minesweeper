@@ -6,14 +6,22 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using MinesweeperProject.Architecture.DynamicLinkage;
+using MinesweeperProject.Architecture.Factory;
+using MinesweeperProject.Architecture.Observer;
 
 namespace MinesweeperProject
 {
-    public partial class Form1 : Form
-    {
+    public partial class Form1 : Form {
+
+        private GameMode _gameMode;
+        
         public Form1()
         {
+            IBoardFactory factory = new BoardFactory();
+            _gameMode = new GameInstance(factory);
             InitializeComponent();
+            
         }
 
         private void timer1_Tick(object sender, EventArgs e)

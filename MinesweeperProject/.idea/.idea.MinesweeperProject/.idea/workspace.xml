@@ -1,0 +1,714 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="e2c139a5-027a-4696-9b39-366a6c48fe62" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/MinesweeperProject/Form1.cs" beforeDir="false" afterPath="$PROJECT_DIR$/MinesweeperProject/Form1.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/MinesweeperProject/MinesweeperProject.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/MinesweeperProject/MinesweeperProject.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Squares.drawio" beforeDir="false" afterPath="$PROJECT_DIR$/../Squares.drawio" afterDir="false" />
+    </list>
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/Square.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="374">
+              <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+              <folding>
+                <marker date="1555939322518" expanded="true" signature="6:95" ph="..." />
+                <marker date="1555939322518" expanded="true" signature="149:1176" ph="{...}" />
+                <marker date="1555939322518" expanded="true" signature="202:1174" ph="{...}" />
+                <marker date="1555939322518" expanded="true" signature="425:589" ph="{...}" />
+                <marker date="1555939322518" expanded="true" signature="781:958" ph="{...}" />
+                <marker date="1555939322518" expanded="true" signature="830:886" ph="{...}" />
+                <marker date="1555939322518" expanded="true" signature="1008:1167" ph="{...}" />
+                <marker date="1555939322518" expanded="true" signature="1073:1157" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MinesweeperProject/Form1.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="153">
+              <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+              <folding>
+                <marker date="1555940167667" expanded="false" signature="6:183" ph="..." />
+                <marker date="1555940167667" expanded="true" signature="362:1097" ph="{...}" />
+                <marker date="1555940167667" expanded="true" signature="403:1095" ph="{...}" />
+                <marker date="1555940167667" expanded="true" signature="473:648" ph="{...}" />
+                <marker date="1555940167667" expanded="true" signature="710:731" ph="{...}" />
+                <marker date="1555940167667" expanded="true" signature="792:813" ph="{...}" />
+                <marker date="1555940167667" expanded="true" signature="888:909" ph="{...}" />
+                <marker date="1555940167667" expanded="true" signature="977:998" ph="{...}" />
+                <marker date="1555940167667" expanded="true" signature="1068:1089" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/NormalSquare.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="34">
+              <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+              <folding>
+                <marker date="1555939143204" expanded="true" signature="52:401" ph="{...}" />
+                <marker date="1555939143204" expanded="true" signature="102:399" ph="{...}" />
+                <marker date="1555939143204" expanded="true" signature="171:182" ph="{...}" />
+                <marker date="1555939143204" expanded="true" signature="220:287" ph="{...}" />
+                <marker date="1555939143204" expanded="true" signature="325:392" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/EmptySquare.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="204">
+              <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+              <folding>
+                <marker date="1555939143264" expanded="true" signature="52:429" ph="{...}" />
+                <marker date="1555939143264" expanded="true" signature="98:427" ph="{...}" />
+                <marker date="1555939143264" expanded="true" signature="163:174" ph="{...}" />
+                <marker date="1555939143264" expanded="true" signature="220:287" ph="{...}" />
+                <marker date="1555939143264" expanded="true" signature="345:412" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Factory/IBoardFactory.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+              <folding>
+                <marker date="1555939143245" expanded="true" signature="100:196" ph="{...}" />
+                <marker date="1555939143245" expanded="true" signature="137:194" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/DynamicLinkage/GameMode.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="54" />
+              <folding>
+                <marker date="1555940264645" expanded="true" signature="86:448" ph="{...}" />
+                <marker date="1555940264645" expanded="true" signature="123:446" ph="{...}" />
+                <marker date="1555940264645" expanded="true" signature="240:283" ph="{...}" />
+                <marker date="1555940264645" expanded="true" signature="337:381" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Factory/BoardFactory.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" column="54" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="54" />
+              <folding>
+                <marker date="1555939099493" expanded="true" signature="100:538" ph="{...}" />
+                <marker date="1555939099493" expanded="true" signature="148:536" ph="{...}" />
+                <marker date="1555939099493" expanded="true" signature="206:530" ph="{...}" />
+                <marker date="1555939099493" expanded="true" signature="232:520" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Observer/GameInstance.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="306">
+              <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+              <folding>
+                <marker date="1555940264633" expanded="true" signature="6:144" ph="..." />
+                <marker date="1555940264633" expanded="true" signature="244:1049" ph="{...}" />
+                <marker date="1555940264633" expanded="true" signature="307:1047" ph="{...}" />
+                <marker date="1555940264633" expanded="true" signature="455:498" ph="{...}" />
+                <marker date="1555940264633" expanded="true" signature="564:624" ph="{...}" />
+                <marker date="1555940264633" expanded="true" signature="668:716" ph="{...}" />
+                <marker date="1555940264633" expanded="true" signature="763:827" ph="{...}" />
+                <marker date="1555940264633" expanded="true" signature="863:927" ph="{...}" />
+                <marker date="1555940264633" expanded="true" signature="987:1041" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/NumberSquare.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+              <folding>
+                <marker date="1555939143137" expanded="true" signature="52:370" ph="{...}" />
+                <marker date="1555939143137" expanded="true" signature="99:368" ph="{...}" />
+                <marker date="1555939143137" expanded="true" signature="197:236" ph="{...}" />
+                <marker date="1555939143137" expanded="true" signature="286:353" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/Pattern.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/ComplexPattern.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/IBasicComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Scheduler/Scheduler.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/DynamicLinkage/GameMode.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/DynamicLinkage/Difficulty.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/DynamicLinkage/Board.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/IBoardComponent.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/DynamicLinkage/IBoard.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinesweeperProject/Form1.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinesweeperProject/Form1.Designer.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Observer/GameInstance.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Observer/ObservationState.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Factory/IBoardFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Factory/BoardFactory.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/NumberSquare.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/EmptySquare.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/NormalSquare.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/Mine.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Observer/Payload.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/Square.cs" root0="FORCE_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/MinesweeperProject/Basic/IBoard.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Basic/IBoardComponent.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Basic/Difficulty.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Basic/GameMode.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Basic/Board.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Basic/Scheduler.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Basic/IBasicComponent.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Basic/ComplexPattern.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Basic/Pattern.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Basic/Payload.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Basic/Square.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Basic/Mine.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Basic/NormalSquare.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Basic/NumberSquare.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Basic/EmptySquare.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Architecture/IBoardFactory.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Architecture/Observer/ObservationState.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/Mine.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/NormalSquare.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/EmptySquare.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/NumberSquare.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Architecture/Factory/BoardFactory.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Architecture/Factory/IBoardFactory.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/Square.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Form1.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Architecture/DynamicLinkage/GameMode.cs" />
+        <option value="$PROJECT_DIR$/MinesweeperProject/Architecture/Observer/GameInstance.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="70" />
+    <option name="y" value="-30" />
+    <option name="width" value="1750" />
+    <option name="height" value="980" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
+    <ConfirmationsSetting value="1" id="Add" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AssemblyExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MinesweeperProject" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MinesweeperProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MinesweeperProject" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MinesweeperProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MinesweeperProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Architecture" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MinesweeperProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MinesweeperProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Architecture" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Composite" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MinesweeperProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MinesweeperProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Architecture" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="DynamicLinkage" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MinesweeperProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MinesweeperProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Architecture" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Factory" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MinesweeperProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MinesweeperProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Architecture" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Observer" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MinesweeperProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MinesweeperProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Architecture" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Scheduler" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="MinesweeperProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="MinesweeperProject" type="24d0babc:SolutionExplorerModelNode" />
+              <item name="Form1.cs" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+      <pane id="FileSystemExplorer" />
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="nodejs_npm_path_reset_for_default_project" value="true" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="None" />
+      <option name="PROJECT_TFM" value="" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="e2c139a5-027a-4696-9b39-366a6c48fe62" name="Default Changelist" comment="" />
+      <created>1555889877511</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1555889877511</updated>
+      <workItem from="1555889881302" duration="1390000" />
+      <workItem from="1555937967307" duration="2423000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3813000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
+    <layout>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25302014" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Capture Tool" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="bottom" id="Performance Profiler" order="8" />
+      <window_info anchor="bottom" id="Docker" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" />
+      <window_info anchor="bottom" id="Unit Tests" order="12" />
+      <window_info anchor="bottom" id="Terminal" order="13" />
+      <window_info anchor="bottom" id="Event Log" order="14" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Errors In Solution" order="4" />
+      <window_info anchor="right" id="Database" order="5" />
+      <window_info anchor="right" id="Unit Tests Coverage" order="6" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/DynamicLinkage/Board.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="46" selection-start-line="12" selection-start-column="46" selection-end-line="12" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/DynamicLinkage/Difficulty.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="14" lean-forward="true" selection-start-line="4" selection-start-column="14" selection-end-line="4" selection-end-column="14" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/IBoardComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/DynamicLinkage/IBoard.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="48" selection-start-line="2" selection-start-column="48" selection-end-line="2" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Scheduler/Scheduler.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" selection-start-line="1" selection-end-line="1" selection-end-column="33" />
+          <folding>
+            <marker date="1555938175061" expanded="true" signature="6:71" ph="..." />
+            <marker date="1555938175061" expanded="true" signature="125:426" ph="{...}" />
+            <marker date="1555938175061" expanded="true" signature="154:424" ph="{...}" />
+            <marker date="1555938175061" expanded="true" signature="272:330" ph="{...}" />
+            <marker date="1555938175061" expanded="true" signature="359:417" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/IBasicComponent.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="56" selection-start-line="1" selection-start-column="56" selection-end-line="1" selection-end-column="56" />
+          <folding>
+            <marker date="1555938152393" expanded="true" signature="52:127" ph="{...}" />
+            <marker date="1555938152393" expanded="true" signature="109:125" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/ComplexPattern.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="7" column="53" selection-start-line="7" selection-start-column="53" selection-end-line="7" selection-end-column="53" />
+          <folding>
+            <marker date="1555938152350" expanded="true" signature="87:292" ph="{...}" />
+            <marker date="1555938152350" expanded="true" signature="139:290" ph="{...}" />
+            <marker date="1555938152350" expanded="true" signature="250:274" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/Pattern.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="5" column="19" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <folding>
+            <marker date="1555938152513" expanded="true" signature="87:183" ph="{...}" />
+            <marker date="1555938152513" expanded="true" signature="132:181" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Observer/Payload.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-17">
+          <caret line="3" column="30" selection-start-line="3" selection-start-column="30" selection-end-line="3" selection-end-column="30" />
+          <folding>
+            <marker date="1555938169683" expanded="true" signature="51:120" ph="{...}" />
+            <marker date="1555938169683" expanded="true" signature="78:118" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Observer/ObservationState.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="33" lean-forward="true" selection-start-line="11" selection-start-column="33" selection-end-line="11" selection-end-column="33" />
+          <folding>
+            <marker date="1555938875290" expanded="true" signature="6:47" ph="..." />
+            <marker date="1555938875290" expanded="true" signature="100:631" ph="{...}" />
+            <marker date="1555938875290" expanded="true" signature="150:629" ph="{...}" />
+            <marker date="1555938875290" expanded="true" signature="352:433" ph="{...}" />
+            <marker date="1555938875290" expanded="true" signature="473:614" ph="{...}" />
+            <marker date="1555938875290" expanded="true" signature="543:604" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/Mine.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="9" selection-start-line="4" selection-start-column="9" selection-end-line="4" selection-end-column="9" />
+          <folding>
+            <marker date="1555939143176" expanded="true" signature="52:715" ph="{...}" />
+            <marker date="1555939143176" expanded="true" signature="85:713" ph="{...}" />
+            <marker date="1555939143176" expanded="true" signature="143:154" ph="{...}" />
+            <marker date="1555939143176" expanded="true" signature="186:253" ph="{...}" />
+            <marker date="1555939143176" expanded="true" signature="296:363" ph="{...}" />
+            <marker date="1555939143176" expanded="true" signature="409:476" ph="{...}" />
+            <marker date="1555939143176" expanded="true" signature="514:581" ph="{...}" />
+            <marker date="1555939143176" expanded="true" signature="631:698" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/NormalSquare.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="8" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="8" />
+          <folding>
+            <marker date="1555939143204" expanded="true" signature="52:401" ph="{...}" />
+            <marker date="1555939143204" expanded="true" signature="102:399" ph="{...}" />
+            <marker date="1555939143204" expanded="true" signature="171:182" ph="{...}" />
+            <marker date="1555939143204" expanded="true" signature="220:287" ph="{...}" />
+            <marker date="1555939143204" expanded="true" signature="325:392" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/EmptySquare.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="9" selection-start-line="12" selection-start-column="9" selection-end-line="12" selection-end-column="9" />
+          <folding>
+            <marker date="1555939143264" expanded="true" signature="52:429" ph="{...}" />
+            <marker date="1555939143264" expanded="true" signature="98:427" ph="{...}" />
+            <marker date="1555939143264" expanded="true" signature="163:174" ph="{...}" />
+            <marker date="1555939143264" expanded="true" signature="220:287" ph="{...}" />
+            <marker date="1555939143264" expanded="true" signature="345:412" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/NumberSquare.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" lean-forward="true" selection-start-line="4" selection-end-line="4" />
+          <folding>
+            <marker date="1555939143137" expanded="true" signature="52:370" ph="{...}" />
+            <marker date="1555939143137" expanded="true" signature="99:368" ph="{...}" />
+            <marker date="1555939143137" expanded="true" signature="197:236" ph="{...}" />
+            <marker date="1555939143137" expanded="true" signature="286:353" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Factory/BoardFactory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="54" lean-forward="true" selection-start-line="4" selection-start-column="40" selection-end-line="4" selection-end-column="54" />
+          <folding>
+            <marker date="1555939099493" expanded="true" signature="100:538" ph="{...}" />
+            <marker date="1555939099493" expanded="true" signature="148:536" ph="{...}" />
+            <marker date="1555939099493" expanded="true" signature="206:530" ph="{...}" />
+            <marker date="1555939099493" expanded="true" signature="232:520" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Factory/IBoardFactory.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="47" selection-start-line="4" selection-start-column="47" selection-end-line="4" selection-end-column="47" />
+          <folding>
+            <marker date="1555939143245" expanded="true" signature="100:196" ph="{...}" />
+            <marker date="1555939143245" expanded="true" signature="137:194" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinesweeperProject/Form1.Designer.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="2" column="18" selection-start-line="2" selection-start-column="18" selection-end-line="2" selection-end-column="18" />
+          <folding>
+            <marker date="1555517696314" expanded="true" signature="28:11447" ph="{...}" />
+            <marker date="1555517696314" expanded="true" signature="54:11445" ph="{...}" />
+            <marker date="1555517696314" expanded="true" signature="69:145" ph="/// Required designer variable. ... " />
+            <marker date="1555517696314" expanded="true" signature="223:414" ph="/// Clean up any resources being used. ... " />
+            <marker date="1555517696314" expanded="true" signature="470:644" ph="{...}" />
+            <marker date="1555517696314" expanded="true" signature="531:597" ph="{...}" />
+            <marker date="1555517696314" expanded="false" signature="654:10346" ph="Windows Form Designer generated code" />
+            <marker date="1555517696314" expanded="true" signature="708:871" ph="/// Required method for Designer support - do not modify ... " />
+            <marker date="1555517696314" expanded="true" signature="914:10326" ph="{...}" />
+            <marker date="1555517696314" expanded="true" signature="2390:2433" ph="/* PlayZone ... */" />
+            <marker date="1555517696314" expanded="true" signature="3122:3168" ph="/* ResetButton ... */" />
+            <marker date="1555517696314" expanded="true" signature="3777:3820" ph="/* textBox1 ... */" />
+            <marker date="1555517696314" expanded="true" signature="4256:4299" ph="/* textBox2 ... */" />
+            <marker date="1555517696314" expanded="true" signature="4577:4617" ph="/* Timer ... */" />
+            <marker date="1555517696314" expanded="true" signature="4916:4965" ph="/* MinesRemaining ... */" />
+            <marker date="1555517696314" expanded="true" signature="5491:5536" ph="/* menuStrip1 ... */" />
+            <marker date="1555517696314" expanded="true" signature="5667:5731" ph="{...}" />
+            <marker date="1555517696314" expanded="true" signature="6026:6075" ph="/* ToolbarOptions ... */" />
+            <marker date="1555517696314" expanded="true" signature="6172:6254" ph="{...}" />
+            <marker date="1555517696314" expanded="true" signature="6545:6601" ph="/* exitToolStripMenuItem ... */" />
+            <marker date="1555517696314" expanded="true" signature="6705:6828" ph="{...}" />
+            <marker date="1555517696314" expanded="true" signature="7052:7109" ph="/* exitToolStripMenuItem1 ... */" />
+            <marker date="1555517696314" expanded="true" signature="7331:7387" ph="/* easyToolStripMenuItem ... */" />
+            <marker date="1555517696314" expanded="true" signature="7605:7663" ph="/* mediumToolStripMenuItem ... */" />
+            <marker date="1555517696314" expanded="true" signature="7891:7947" ph="/* hardToolStripMenuItem ... */" />
+            <marker date="1555517696314" expanded="true" signature="8165:8211" ph="/* ToolbarHelp ... */" />
+            <marker date="1555517696314" expanded="true" signature="8305:8356" ph="{...}" />
+            <marker date="1555517696314" expanded="true" signature="8622:8688" ph="/* howDoMinesweepToolStripMenuItem ... */" />
+            <marker date="1555517696314" expanded="true" signature="8802:8849" ph="{...}" />
+            <marker date="1555517696314" expanded="true" signature="9121:9183" ph="/* doTheSweepToolStripMenuItem ... */" />
+            <marker date="1555517696314" expanded="true" signature="9433:9473" ph="/* Form1 ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinesweeperProject/Form1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="16" column="35" selection-start-line="16" selection-start-column="35" selection-end-line="16" selection-end-column="35" />
+          <folding>
+            <marker date="1555940167667" expanded="false" signature="6:183" ph="..." />
+            <marker date="1555940167667" expanded="true" signature="362:1097" ph="{...}" />
+            <marker date="1555940167667" expanded="true" signature="403:1095" ph="{...}" />
+            <marker date="1555940167667" expanded="true" signature="473:648" ph="{...}" />
+            <marker date="1555940167667" expanded="true" signature="710:731" ph="{...}" />
+            <marker date="1555940167667" expanded="true" signature="792:813" ph="{...}" />
+            <marker date="1555940167667" expanded="true" signature="888:909" ph="{...}" />
+            <marker date="1555940167667" expanded="true" signature="977:998" ph="{...}" />
+            <marker date="1555940167667" expanded="true" signature="1068:1089" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Composite/Square.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="25" column="37" lean-forward="true" selection-start-line="25" selection-start-column="37" selection-end-line="25" selection-end-column="37" />
+          <folding>
+            <marker date="1555939322518" expanded="true" signature="6:95" ph="..." />
+            <marker date="1555939322518" expanded="true" signature="149:1176" ph="{...}" />
+            <marker date="1555939322518" expanded="true" signature="202:1174" ph="{...}" />
+            <marker date="1555939322518" expanded="true" signature="425:589" ph="{...}" />
+            <marker date="1555939322518" expanded="true" signature="781:958" ph="{...}" />
+            <marker date="1555939322518" expanded="true" signature="830:886" ph="{...}" />
+            <marker date="1555939322518" expanded="true" signature="1008:1167" ph="{...}" />
+            <marker date="1555939322518" expanded="true" signature="1073:1157" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/DynamicLinkage/GameMode.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="54" lean-forward="true" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="54" />
+          <folding>
+            <marker date="1555940264645" expanded="true" signature="86:448" ph="{...}" />
+            <marker date="1555940264645" expanded="true" signature="123:446" ph="{...}" />
+            <marker date="1555940264645" expanded="true" signature="240:283" ph="{...}" />
+            <marker date="1555940264645" expanded="true" signature="337:381" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/MinesweeperProject/Architecture/Observer/GameInstance.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding>
+            <marker date="1555940264633" expanded="true" signature="6:144" ph="..." />
+            <marker date="1555940264633" expanded="true" signature="244:1049" ph="{...}" />
+            <marker date="1555940264633" expanded="true" signature="307:1047" ph="{...}" />
+            <marker date="1555940264633" expanded="true" signature="455:498" ph="{...}" />
+            <marker date="1555940264633" expanded="true" signature="564:624" ph="{...}" />
+            <marker date="1555940264633" expanded="true" signature="668:716" ph="{...}" />
+            <marker date="1555940264633" expanded="true" signature="763:827" ph="{...}" />
+            <marker date="1555940264633" expanded="true" signature="863:927" ph="{...}" />
+            <marker date="1555940264633" expanded="true" signature="987:1041" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
