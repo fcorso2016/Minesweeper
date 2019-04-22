@@ -5,10 +5,11 @@ namespace MinesweeperProject.Structure {
 
         public NumberSquare(int x, int y, int value) : base(x, y) {
             _value = value;
+            Button.Text = _value.ToString();
         }
 
         protected override void RenderConents() {
-            throw new System.NotImplementedException();
+            // Draw a thing
         }
         
     }

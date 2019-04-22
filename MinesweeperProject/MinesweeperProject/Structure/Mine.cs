@@ -1,7 +1,11 @@
+using System;
+using System.Windows.Forms.VisualStyles;
+
 namespace MinesweeperProject.Structure {
     public class Mine : Square {
         
         public Mine(int x, int y) : base(x, y) {
+            Button.Text = "X";
         }
 
         public void Explode() {
@@ -11,12 +15,13 @@ namespace MinesweeperProject.Structure {
         private void TriggerExplosions() {
             throw new System.NotImplementedException();
         }
-        
+
         public override void Open() {
-            throw new System.NotImplementedException();
+            base.Open();
+            Explode();
         }
 
-        public override void Mark() {
+        protected override void Mark() {
             throw new System.NotImplementedException();
         }
 

@@ -18,9 +18,11 @@ namespace MinesweeperProject
         
         public Form1()
         {
+            InitializeComponent();
             IGeneratorFactory factory = new GeneratorFactory();
             _gameMode = new GameInstance(factory);
-            InitializeComponent();
+            IBoard board = new Board(_gameMode);
+            _gameMode.GenerateBoard(panel1);
             
         }
 

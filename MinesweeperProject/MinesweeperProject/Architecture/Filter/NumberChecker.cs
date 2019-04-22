@@ -1,3 +1,4 @@
+using System;
 using System.Xml.Linq;
 using MinesweeperProject.Architecture.DynamicLinkage;
 
@@ -10,8 +11,9 @@ namespace MinesweeperProject.Architecture.Filter {
         }
 
         public override char[,] Verify() {
-            for (int i = 0; i < Board.Length; i++) {
-                for (int j = 0; j < Board.Length; j++) {
+            int size = (int) Math.Sqrt(Board.Length);
+            for (int i = 0; i < size; i++) {
+                for (int j = 0; j < size; j++) {
                     // Correct any invalid values before moving forward
                     if (Board[i, j] != 'X' || !(Board[i, j] >= '0' && Board[i, j] <= '9')) {
                         Board[i, j] = '0';
@@ -22,7 +24,7 @@ namespace MinesweeperProject.Architecture.Filter {
                         int mineCount = 0;
                         for (int x = -1; x <= 1; x++) {
                             for (int y = -1; y <= 1; y++) {
-                                if (Board[i + x, j + y] == 'X') {
+                                if (i + x >= 0 && i + x < size && j + y >= 0 && j + y < size && Board[i + x, j + y] == 'X') {
                                     mineCount++;
                                 }
                             }

@@ -27,8 +27,8 @@ namespace MinesweeperProject.Architecture.Filter {
             }
 
             IList<Tuple<int, int>> mineLocations = new List<Tuple<int, int>>();
-            for (int i = 0; i < Board.Length; i++) {
-                for (int j = 0; j < Board.Length; j++) {
+            for (int i = 0; i < (int)Math.Sqrt(Board.Length); i++) {
+                for (int j = 0; j < (int)Math.Sqrt(Board.Length); j++) {
                     if (Board[i, j] == 'X') {
                         mineLocations.Add(new Tuple<int, int>(i, j));
                     }
@@ -41,8 +41,8 @@ namespace MinesweeperProject.Architecture.Filter {
                 while (mines > mineLocations.Count) {
                     int x, y;
                     do {
-                        x = rand.Next() % Board.Length;
-                        y = rand.Next() % Board.Length;
+                        x = rand.Next() % (int)Math.Sqrt(Board.Length);
+                        y = rand.Next() % (int)Math.Sqrt(Board.Length);
                     } while (Board[x, y] == 'X');
 
                     Board[x, y] = 'X';

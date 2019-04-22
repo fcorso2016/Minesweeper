@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using MinesweeperProject.Architecture.DynamicLinkage;
 
@@ -24,11 +25,11 @@ namespace MinesweeperProject.Architecture.Filter {
                     break;
             }
 
-            if (Board.Length != correctSize) {
+            if ((int)Math.Sqrt(Board.Length) != correctSize) {
                 char[,] newBoard = new char[correctSize, correctSize];
                 for (int i = 0; i < correctSize; i++) {
                     for (int j = 0; j < correctSize; j++) {
-                        if (Board.Length > i) {
+                        if ((int)Math.Sqrt(Board.Length) > i && (int)Math.Sqrt(Board.Length) > j) {
                             newBoard[i, j] = Board[i, j];
                         } else {
                             newBoard[i, j] = '0';
