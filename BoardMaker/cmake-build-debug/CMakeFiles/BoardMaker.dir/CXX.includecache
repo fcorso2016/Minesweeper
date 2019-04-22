@@ -1,0 +1,14 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+C:/Users/Francesco Corso/OneDrive/Documents/School/Software Architecture/Minesweeper/BoardMaker/main.cpp
+iostream
+-
+random
+-
+

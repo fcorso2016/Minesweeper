@@ -1,0 +1,3 @@
+C:/Users/Francesco Corso/OneDrive/Documents/School/Software Architecture/Minesweeper/BoardMaker/cmake-build-debug/CMakeFiles/BoardMaker.dir
+C:/Users/Francesco Corso/OneDrive/Documents/School/Software Architecture/Minesweeper/BoardMaker/cmake-build-debug/CMakeFiles/edit_cache.dir
+C:/Users/Francesco Corso/OneDrive/Documents/School/Software Architecture/Minesweeper/BoardMaker/cmake-build-debug/CMakeFiles/rebuild_cache.dir
