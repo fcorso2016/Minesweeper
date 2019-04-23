@@ -1,15 +1,16 @@
+using System;
+using System.Drawing;
+using System.Net.Mime;
+using System.Threading;
+using System.Windows.Forms.VisualStyles;
+
 namespace MinesweeperProject.Structure {
     public class NumberSquare : NormalSquare {
 
-        private int _value;
+        public int Value { get; }
 
         public NumberSquare(int x, int y, int value) : base(x, y) {
-            _value = value;
-            Button.Text = _value.ToString();
-        }
-
-        protected override void RenderConents() {
-            // Draw a thing
+            Value = value;
         }
         
     }

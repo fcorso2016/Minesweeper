@@ -23,7 +23,6 @@ namespace MinesweeperProject
             _gameMode = new GameInstance(factory);
             IBoard board = new Board(_gameMode);
             _gameMode.GenerateBoard(panel1);
-            
         }
 
         private void timer1_Tick(object sender, EventArgs e)
@@ -46,9 +45,8 @@ namespace MinesweeperProject
 
         }
 
-        private void PlayZone_Paint(object sender, PaintEventArgs e)
-        {
-
+        private void panel1_Paint(object sender, PaintEventArgs e) {
+            
         }
     }
 }

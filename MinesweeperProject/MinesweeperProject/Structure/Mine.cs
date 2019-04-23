@@ -9,11 +9,8 @@ namespace MinesweeperProject.Structure {
         }
 
         public void Explode() {
-            throw new System.NotImplementedException();
-        }
-
-        private void TriggerExplosions() {
-            throw new System.NotImplementedException();
+            // Play a sound and start the threads
+            SendMessage("BOOM");
         }
 
         public override void Open() {
@@ -22,10 +19,6 @@ namespace MinesweeperProject.Structure {
         }
 
         protected override void Mark() {
-            throw new System.NotImplementedException();
-        }
-
-        protected override void RenderConents() {
             throw new System.NotImplementedException();
         }
         

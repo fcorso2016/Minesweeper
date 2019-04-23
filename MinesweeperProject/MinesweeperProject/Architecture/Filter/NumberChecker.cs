@@ -15,7 +15,7 @@ namespace MinesweeperProject.Architecture.Filter {
             for (int i = 0; i < size; i++) {
                 for (int j = 0; j < size; j++) {
                     // Correct any invalid values before moving forward
-                    if (Board[i, j] != 'X' || !(Board[i, j] >= '0' && Board[i, j] <= '9')) {
+                    if (Board[i, j] != 'X' && !(Board[i, j] >= '0' && Board[i, j] <= '9')) {
                         Board[i, j] = '0';
                     }
                     

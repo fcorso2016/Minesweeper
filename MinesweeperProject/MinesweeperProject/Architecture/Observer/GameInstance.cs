@@ -17,6 +17,8 @@ namespace MinesweeperProject.Architecture.Observer {
         }
         
         public override void GenerateBoard(Panel panel) {
+            GetBoard().SetPanel(panel);
+            
             IGenerator gen = _factory.CreateGenerator("NativeGenerator");
             int size = 0;
             int mines = 0;
@@ -62,7 +64,6 @@ namespace MinesweeperProject.Architecture.Observer {
                     square.Button.Top += panel.Top;
                     square.Button.Left += panel.Left;
                     panel.Controls.Add(square.Button);
-                    square.panel = panel;
 
                     square.Subscribe(this);
                 }
@@ -98,6 +99,14 @@ namespace MinesweeperProject.Architecture.Observer {
                     if (Int32.TryParse(args[0], out int x) && Int32.TryParse(args[1], out int y)) {
                         GetBoard().ExpandEmpty(x, y, true);
                     }
+                } else if (operation.ToUpper().Equals("DEATH")) {
+                    
+                } else if (operation.ToUpper().Equals("BADFLAG")) {
+                    
+                } else if (operation.ToUpper().Equals("GOODFLAG")) {
+                    
+                } else if (operation.ToUpper().Equals("REFRESH")) {
+                    GetBoard().RefreshContents();
                 }
             }
             

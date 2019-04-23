@@ -1,5 +1,8 @@
 using System;
 using System.Collections.Generic;
+using System.Drawing;
+using System.Runtime.InteropServices;
+using System.Windows.Forms;
 using MinesweeperProject.Structure;
 
 namespace MinesweeperProject.Architecture.DynamicLinkage {
@@ -8,6 +11,9 @@ namespace MinesweeperProject.Architecture.DynamicLinkage {
         private Square[,] _squares;
         private Scheduler.Scheduler _scheduler;
         private GameMode _gameMode;
+        private Panel _panel;
+        private Bitmap _background;
+        private Bitmap _foreground;
 
         public Board(GameMode gm) {
             _gameMode = gm;
@@ -31,6 +37,36 @@ namespace MinesweeperProject.Architecture.DynamicLinkage {
                     }
                 }
             }
+        }
+
+        public void SetPanel(Panel panel) {
+            _panel = panel;
+            _background = new Bitmap(panel.Width, panel.Height);
+            _foreground = new Bitmap(panel.Width, panel.Height);
+        }
+
+        public void RefreshContents() {
+            _foreground = (Bitmap) _background.Clone();
+
+            Graphics g = _panel.CreateGraphics();
+            Graphics fg = Graphics.FromImage(_foreground);
+            foreach (Square sq in _squares) {
+                if (sq.IsOpen) {
+                    if (sq.GetType() == typeof(NumberSquare)) {
+                        int value = ((NumberSquare) sq).Value;
+                        int x = sq.X;
+                        int y = sq.Y;
+                        PointF textPos = new PointF(30 * sq.X + _panel.Left + 5, 30 * sq.Y + _panel.Top + 5);
+                        fg.DrawString(value.ToString(),
+                            new Font("Tahoma", 12),
+                            Brushes.Black,
+                            textPos);
+                    }
+                }
+            }
+            
+            g.DrawImage(_foreground, new Rectangle(new Point(0, 0), _panel.Size));
+            _background = _foreground;
         }
 
         public void TriggerExplosions(Mine mine) {

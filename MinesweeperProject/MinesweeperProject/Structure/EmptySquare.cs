@@ -11,9 +11,5 @@ namespace MinesweeperProject.Structure {
             SendMessage("EXPANDALL: " + X + ", " + Y);
         }
         
-        protected override void RenderConents() {
-            // Do nothing, as the contents are empty
-        }
-        
     }
 }

@@ -54,7 +54,7 @@
             this.ResetButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ResetButton.BackgroundImage")));
             this.ResetButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ResetButton.Location = new System.Drawing.Point(484, 38);
-            this.ResetButton.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.ResetButton.Margin = new System.Windows.Forms.Padding(4);
             this.ResetButton.Name = "ResetButton";
             this.ResetButton.Size = new System.Drawing.Size(53, 49);
             this.ResetButton.TabIndex = 1;
@@ -64,7 +64,7 @@
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.textBox1.Location = new System.Drawing.Point(979, 63);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
             this.textBox1.Size = new System.Drawing.Size(71, 22);
@@ -73,7 +73,7 @@
             // textBox2
             // 
             this.textBox2.Location = new System.Drawing.Point(17, 63);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4);
             this.textBox2.Name = "textBox2";
             this.textBox2.ReadOnly = true;
             this.textBox2.Size = new System.Drawing.Size(71, 22);
@@ -187,6 +187,7 @@
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1042, 518);
             this.panel1.TabIndex = 7;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // Form1
             // 
@@ -200,7 +201,7 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.ResetButton);
             this.Controls.Add(this.menuStrip1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);

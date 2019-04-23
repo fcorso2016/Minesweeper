@@ -6,7 +6,7 @@ namespace MinesweeperProject.Structure {
 
         protected override void Mark() {
             base.Mark();
-           SendMessage("BADFLAG");
+            SendMessage("BADFLAG");
         }
 
     }
