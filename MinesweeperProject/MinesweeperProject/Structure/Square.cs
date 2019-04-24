@@ -45,7 +45,7 @@ namespace MinesweeperProject.Structure {
             ProcessOpen();
         }
 
-        public void ProcessOpen() {
+        public virtual void ProcessOpen() {
             if (!IsOpen) {
                 IsOpen = true;
                 Button.Dispose();

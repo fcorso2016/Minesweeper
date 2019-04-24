@@ -1,5 +1,6 @@
 using System;
 using System.Text.RegularExpressions;
+using System.Threading;
 using System.Windows.Forms;
 using MinesweeperProject.Architecture.DynamicLinkage;
 using MinesweeperProject.Architecture.Factory;
@@ -99,8 +100,19 @@ namespace MinesweeperProject.Architecture.Observer {
                     if (Int32.TryParse(args[0], out int x) && Int32.TryParse(args[1], out int y)) {
                         GetBoard().ExpandEmpty(x, y, true);
                     }
-                } else if (operation.ToUpper().Equals("DEATH")) {
-                    
+                } else if (operation.ToUpper().Equals("BOOM")) {
+                    if (Int32.TryParse(args[0], out int x) && Int32.TryParse(args[1], out int y)) {
+                        Mine mine = (Mine) GetBoard().GetSquare(x, y);
+                        Thread explosion = mine.PrepExplosion();
+                        explosion.Start();
+                    }
+                } else if (operation.ToUpper().Equals("CASCADE")) {
+                    if (Int32.TryParse(args[0], out int x) && Int32.TryParse(args[1], out int y)) {
+                        Mine mine = (Mine) GetBoard().GetSquare(x, y);
+                        GetBoard().TriggerExplosions(mine);
+                    }
+                } else if (operation.ToUpper().Equals("DONE")) {
+                    GetBoard().NextExplosion();
                 } else if (operation.ToUpper().Equals("BADFLAG")) {
                     
                 } else if (operation.ToUpper().Equals("GOODFLAG")) {
