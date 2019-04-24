@@ -5,7 +5,6 @@ namespace MinesweeperProject.Structure {
     public class Mine : Square {
         
         public Mine(int x, int y) : base(x, y) {
-            Button.Text = "X";
         }
 
         public void Explode() {
@@ -13,7 +12,7 @@ namespace MinesweeperProject.Structure {
             SendMessage("BOOM");
         }
 
-        public override void Open() {
+        protected override void Open() {
             base.Open();
             Explode();
         }

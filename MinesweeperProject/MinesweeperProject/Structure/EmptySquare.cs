@@ -6,7 +6,7 @@ namespace MinesweeperProject.Structure {
         public EmptySquare(int x, int y) : base(x, y) {
         }
 
-        public override void Open() {
+        protected override void Open() {
             base.Open();
             SendMessage("EXPANDALL: " + X + ", " + Y);
         }

@@ -24,15 +24,24 @@ namespace MinesweeperProject.Structure {
             IsOpen = false;
             IsFlagged = false;
             Button = new Button {Size = new Size(30, 30), Left = 30 * x, Top = 30 * y};
-            Button.Click += new EventHandler(OnClick);
+            Button.Click += OnClick;
         }
 
         private void OnClick(object subject, EventArgs e) {
-            Open();
-            SendMessage("REFRESH");
+            MouseEventArgs me = (MouseEventArgs) e;
+            if (me.Button == MouseButtons.Left) {
+                Open();
+                SendMessage("REFRESH");
+            } else if (me.Button == MouseButtons.Right) {
+                if (IsFlagged) {
+                    Unmark();
+                } else {
+                    Mark();
+                }
+            }
         }
 
-        public virtual void Open() {
+        protected virtual void Open() {
             ProcessOpen();
         }
 
@@ -43,12 +52,12 @@ namespace MinesweeperProject.Structure {
                 Button = null;
             }
         }
-
+        
         protected virtual void Mark() {
             IsFlagged = true;
         }
 
-        public void Unmark() {
+        private void Unmark() {
             IsFlagged = false;
         }
 
@@ -59,7 +68,7 @@ namespace MinesweeperProject.Structure {
             return new ObservationState(Observers, observer);
         }
 
-        public void SendMessage(string message) {
+        protected void SendMessage(string message) {
             foreach (IObserver<Payload> observer in Observers) {
                 observer.OnNext(new Payload() { Message = message});
             }
