@@ -33,8 +33,8 @@
             <e p="ObservationState.cs" t="Include" />
             <e p="Payload.cs" t="Include" />
           </e>
-          <e p="Scheduler" t="Include">
-            <e p="Scheduler.cs" t="Include" />
+          <e p="TwoPhaseTermination" t="Include">
+            <e p="GameTimer.cs" t="Include" />
           </e>
         </e>
         <e p="bin" t="ExcludeRecursive" />

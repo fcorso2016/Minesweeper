@@ -1,5 +1,4 @@
 using System;
-using System.Collections.Generic;
 using System.Drawing;
 using System.Runtime.InteropServices;
 using System.Windows.Forms;
@@ -14,7 +13,6 @@ namespace MinesweeperProject.Architecture.DynamicLinkage {
         };
 
         private Square[,] _squares;
-        private Scheduler.Scheduler _scheduler;
         private GameMode _gameMode;
         private Panel _panel;
         private Bitmap _background;
@@ -25,8 +23,9 @@ namespace MinesweeperProject.Architecture.DynamicLinkage {
             _gameMode.SetBoard(this);
         }
 
-        public Square GetSquare(int x, int y) {
-            return _squares[x, y];
+
+        public Square[,] GetSquares() {
+            return _squares;
         }
 
         public void MakeBoard(int size) {
@@ -83,52 +82,6 @@ namespace MinesweeperProject.Architecture.DynamicLinkage {
             
             g.DrawImage(_foreground, new Rectangle(new Point(0, 0), _panel.Size));
             _background = _foreground;
-        }
-
-        public void TriggerExplosions(Mine mine) {
-            Mine closest = FindClosestMine(mine);
-
-            if (closest != null) {
-                _scheduler.Start(closest);
-            }
-        }
-
-        private Mine FindClosestMine(Mine mine) {
-            Queue<Square> squares = new Queue<Square>();
-            IList<Square> visited = new List<Square>();
-            squares.Enqueue(mine);
-            visited.Add(mine);
-            while (squares.Count > 0) {
-                Square s = squares.Dequeue();
-                if (s.GetType() == typeof(Mine)) {
-                    return (Mine) s;
-                }
-
-                foreach (Square adj in GetAdjacentSquares(s)) {
-                    if (!visited.Contains(adj)) {
-                        visited.Add(adj);
-                        squares.Enqueue(adj);
-                    }
-                }
-            }
-
-            return null;
-        }
-
-        private IList<Square> GetAdjacentSquares(Square s) {
-            int size = (int) Math.Sqrt(_squares.Length);
-            
-            IList<Square> squares = new List<Square>();
-            if (s.X > 0) squares.Add(_squares[s.X - 1, s.Y]);
-            if (s.X < size - 1) squares.Add(_squares[s.X + 1, s.Y]);
-            if (s.Y > 0) squares.Add(_squares[s.X, s.Y - 1]);
-            if (s.X < size - 1) squares.Add(_squares[s.X, s.Y + 1]);
-
-            return squares;
-        }
-
-        public void NextExplosion() {
-            _scheduler.Done();
         }
 
         public void AddSquare(Square sq) {

@@ -24,7 +24,7 @@ namespace MinesweeperProject.Structure {
             IsOpen = false;
             IsFlagged = false;
             Button = new Button {Size = new Size(30, 30), Left = 30 * x, Top = 30 * y};
-            Button.Click += OnClick;
+            Button.MouseDown += OnClick;
         }
 
         private void OnClick(object subject, EventArgs e) {
@@ -54,10 +54,12 @@ namespace MinesweeperProject.Structure {
         }
         
         protected virtual void Mark() {
+            Button.Text = "X";
             IsFlagged = true;
         }
 
         private void Unmark() {
+            Button.Text = "";
             IsFlagged = false;
         }
 

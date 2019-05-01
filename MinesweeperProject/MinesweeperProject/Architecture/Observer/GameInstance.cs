@@ -5,6 +5,7 @@ using System.Windows.Forms;
 using MinesweeperProject.Architecture.DynamicLinkage;
 using MinesweeperProject.Architecture.Factory;
 using MinesweeperProject.Architecture.Filter;
+using MinesweeperProject.Architecture.TwoPhaseTermination;
 using MinesweeperProject.Structure;
 
 namespace MinesweeperProject.Architecture.Observer {
@@ -22,25 +23,24 @@ namespace MinesweeperProject.Architecture.Observer {
             
             IGenerator gen = _factory.CreateGenerator("NativeGenerator");
             int size = 0;
-            int mines = 0;
             switch (GetDifficulty()) {
                 case Difficulty.Beginner:
                     size = 8;
-                    mines = 10;
+                    MineCount = 10;
                     break;
                 case Difficulty.Intermediate:
                     size = 16;
-                    mines = 40;
+                    MineCount = 40;
                     break;
                 case Difficulty.Expert:
                     size = 24;
-                    mines = 99;
+                    MineCount = 99;
                     break;
             }
 
             // Create and filter the board
             GetBoard().MakeBoard(size);
-            char[,] board = gen.GenerateBoard(size, mines);
+            char[,] board = gen.GenerateBoard(size, MineCount);
             ICriteria boardFilter = new SizeChecker(board, GetDifficulty());
             boardFilter = new MinesChecker(boardFilter);
             boardFilter = new NumberChecker(boardFilter);
@@ -62,13 +62,21 @@ namespace MinesweeperProject.Architecture.Observer {
                     }
                     
                     GetBoard().AddSquare(square);
-                    square.Button.Top += panel.Top;
-                    square.Button.Left += panel.Left;
+                    AddSquareToGame(square);
+                    //square.Button.Top += panel.Top;
+                    //square.Button.Left += panel.Left;
                     panel.Controls.Add(square.Button);
 
                     square.Subscribe(this);
                 }
             }
+            
+            // Start the game
+            FlagCount = MineCount;
+            MineCountField.Text = FlagCount.ToString();
+            GameTimer = new GameTimer(TimerField);
+            GameTimer.Start();
+
         }
 
         public void OnNext(Payload value) {
@@ -101,27 +109,33 @@ namespace MinesweeperProject.Architecture.Observer {
                         GetBoard().ExpandEmpty(x, y, true);
                     }
                 } else if (operation.ToUpper().Equals("BOOM")) {
-                    if (Int32.TryParse(args[0], out int x) && Int32.TryParse(args[1], out int y)) {
-                        Mine mine = (Mine) GetBoard().GetSquare(x, y);
-                        Thread explosion = mine.PrepExplosion();
-                        explosion.Start();
-                    }
-                } else if (operation.ToUpper().Equals("CASCADE")) {
-                    if (Int32.TryParse(args[0], out int x) && Int32.TryParse(args[1], out int y)) {
-                        Mine mine = (Mine) GetBoard().GetSquare(x, y);
-                        GetBoard().TriggerExplosions(mine);
-                    }
-                } else if (operation.ToUpper().Equals("DONE")) {
-                    GetBoard().NextExplosion();
+                    EndGame();
                 } else if (operation.ToUpper().Equals("BADFLAG")) {
-                    
+                    if (FlagCount > 0) {
+                        FlagCount--;
+                        MineCountField.Text = FlagCount.ToString();
+                    }
                 } else if (operation.ToUpper().Equals("GOODFLAG")) {
-                    
+                    if (FlagCount > 0) {
+                        MineCount--;
+                        FlagCount--;
+                        MineCountField.Text = FlagCount.ToString();
+                        EndGame();
+                    }
                 } else if (operation.ToUpper().Equals("REFRESH")) {
                     GetBoard().RefreshContents();
                 }
             }
             
+        }
+
+        private void EndGame() {
+            GameTimer.Interrupt();
+            foreach (Square square in GetBoard().GetSquares()) {
+                if (square.Button != null) {
+                    square.Button.Enabled = false;
+                }
+            }
         }
         
     }

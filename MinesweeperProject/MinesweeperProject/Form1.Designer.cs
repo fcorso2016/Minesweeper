@@ -50,20 +50,20 @@
             // 
             // ResetButton
             // 
-            this.ResetButton.Anchor = System.Windows.Forms.AnchorStyles.Top;
             this.ResetButton.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("ResetButton.BackgroundImage")));
             this.ResetButton.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ResetButton.Location = new System.Drawing.Point(484, 38);
+            this.ResetButton.Location = new System.Drawing.Point(101, 48);
             this.ResetButton.Margin = new System.Windows.Forms.Padding(4);
             this.ResetButton.Name = "ResetButton";
-            this.ResetButton.Size = new System.Drawing.Size(53, 49);
+            this.ResetButton.Size = new System.Drawing.Size(32, 32);
             this.ResetButton.TabIndex = 1;
             this.ResetButton.UseVisualStyleBackColor = true;
+            this.ResetButton.Click += new System.EventHandler(this.ResetButton_Click);
             // 
             // textBox1
             // 
             this.textBox1.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.textBox1.Location = new System.Drawing.Point(979, 63);
+            this.textBox1.Location = new System.Drawing.Point(156, 63);
             this.textBox1.Margin = new System.Windows.Forms.Padding(4);
             this.textBox1.Name = "textBox1";
             this.textBox1.ReadOnly = true;
@@ -93,7 +93,7 @@
             // 
             this.MinesRemaining.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
             this.MinesRemaining.AutoSize = true;
-            this.MinesRemaining.Location = new System.Drawing.Point(1004, 43);
+            this.MinesRemaining.Location = new System.Drawing.Point(181, 43);
             this.MinesRemaining.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.MinesRemaining.Name = "MinesRemaining";
             this.MinesRemaining.Size = new System.Drawing.Size(45, 17);
@@ -110,7 +110,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(8, 2, 0, 2);
-            this.menuStrip1.Size = new System.Drawing.Size(1067, 28);
+            this.menuStrip1.Size = new System.Drawing.Size(244, 28);
             this.menuStrip1.TabIndex = 6;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -131,32 +131,36 @@
             this.mediumToolStripMenuItem,
             this.hardToolStripMenuItem});
             this.exitToolStripMenuItem.Name = "exitToolStripMenuItem";
-            this.exitToolStripMenuItem.Size = new System.Drawing.Size(157, 26);
+            this.exitToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.exitToolStripMenuItem.Text = "New Game";
             // 
             // easyToolStripMenuItem
             // 
             this.easyToolStripMenuItem.Name = "easyToolStripMenuItem";
-            this.easyToolStripMenuItem.Size = new System.Drawing.Size(139, 26);
+            this.easyToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.easyToolStripMenuItem.Text = "Easy";
+            this.easyToolStripMenuItem.Click += new System.EventHandler(this.easyToolStripMenuItem_Click);
             // 
             // mediumToolStripMenuItem
             // 
             this.mediumToolStripMenuItem.Name = "mediumToolStripMenuItem";
-            this.mediumToolStripMenuItem.Size = new System.Drawing.Size(139, 26);
+            this.mediumToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.mediumToolStripMenuItem.Text = "Medium";
+            this.mediumToolStripMenuItem.Click += new System.EventHandler(this.mediumToolStripMenuItem_Click);
             // 
             // hardToolStripMenuItem
             // 
             this.hardToolStripMenuItem.Name = "hardToolStripMenuItem";
-            this.hardToolStripMenuItem.Size = new System.Drawing.Size(139, 26);
+            this.hardToolStripMenuItem.Size = new System.Drawing.Size(216, 26);
             this.hardToolStripMenuItem.Text = "Hard";
+            this.hardToolStripMenuItem.Click += new System.EventHandler(this.hardToolStripMenuItem_Click);
             // 
             // exitToolStripMenuItem1
             // 
             this.exitToolStripMenuItem1.Name = "exitToolStripMenuItem1";
-            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(157, 26);
+            this.exitToolStripMenuItem1.Size = new System.Drawing.Size(216, 26);
             this.exitToolStripMenuItem1.Text = "Exit";
+            this.exitToolStripMenuItem1.Click += new System.EventHandler(this.exitToolStripMenuItem1_Click);
             // 
             // ToolbarHelp
             // 
@@ -180,12 +184,16 @@
             this.doTheSweepToolStripMenuItem.Name = "doTheSweepToolStripMenuItem";
             this.doTheSweepToolStripMenuItem.Size = new System.Drawing.Size(180, 26);
             this.doTheSweepToolStripMenuItem.Text = "Do The Sweep";
+            this.doTheSweepToolStripMenuItem.Click += new System.EventHandler(this.doTheSweepToolStripMenuItem_Click);
             // 
             // panel1
             // 
-            this.panel1.Location = new System.Drawing.Point(13, 93);
+            this.panel1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.panel1.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
+            this.panel1.Location = new System.Drawing.Point(10, 93);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1042, 518);
+            this.panel1.Size = new System.Drawing.Size(219, 190);
             this.panel1.TabIndex = 7;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
@@ -193,7 +201,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1067, 623);
+            this.ClientSize = new System.Drawing.Size(244, 295);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.MinesRemaining);
             this.Controls.Add(this.Timer);
@@ -201,7 +209,9 @@
             this.Controls.Add(this.textBox1);
             this.Controls.Add(this.ResetButton);
             this.Controls.Add(this.menuStrip1);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.Fixed3D;
             this.Margin = new System.Windows.Forms.Padding(4);
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Form1";
             this.Load += new System.EventHandler(this.Form1_Load);
